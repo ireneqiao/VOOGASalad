@@ -1,0 +1,31 @@
+import java.util.*;
+public class EfficientMarkov extends BaseMarkov{
+	private Map<String, ArrayList<String>> myMap;
+	
+	public EfficientMarkov(int order) {
+		super(order);
+		myMap = new HashMap<String, ArrayList<String>>();
+		
+	}
+	
+	public EfficientMarkov() { //default constructor
+		new EfficientMarkov(3);
+
+	}
+	
+	@Override
+	public void setTraining(String text) {
+		myText = text;
+		myMap.clear();
+		for (int i = 0; i <text.length() - myOrder; i++) {
+			String key = myText.substring(i, i + myOrder);
+			myMap.put(key, new ArrayList<String>());
+			myMap.get(key).add(myText.substring(i + myOrder + 1, i + myOrder + 2));
+		}
+	}
+
+	@Override
+	public ArrayList<String> getFollows(String key){
+		return myMap.get(key);
+	}
+}
