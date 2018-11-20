@@ -1,0 +1,27 @@
+import java.util.*;
+public class ValidAddresses {
+    public String[] valid(String possible){
+        for (int k = 0; k < possible.length(); k++) {
+        	
+        }
+  }
+	public class Address implements Comparable<String>{
+		private String[] ip;
+		public Address (String a) {
+			ip = a.split(".");
+		}
+
+		@Override
+		public int compareTo(String o) {
+			Address other = new Address(o);
+			for (int i = 0; i < ip.length; i++) {
+				int comp = ip[i].compareTo(other.ip[i]);
+				if (comp != 0) {
+					return comp;
+				}
+			}
+			return 0;
+		}
+	}
+
+}

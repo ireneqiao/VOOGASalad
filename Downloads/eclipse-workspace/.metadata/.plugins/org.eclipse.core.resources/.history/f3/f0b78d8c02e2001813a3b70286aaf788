@@ -1,0 +1,30 @@
+
+public class SortByFreqs {
+    public String[] sort(String[] data) {
+        // fill in code here
+    }
+    
+    public class StringFreq implements Comparable{
+    	private String name;
+    	private int freq;
+    	public StringFreq(String s, int f) {
+    		name = s;
+    		freq = f;
+    	}
+
+		@Override
+		public int compareTo(Object o) {
+		StringFreq other = (StringFreq) o;
+		int freqComp = freq - other.freq;
+		if (freqComp != 0) {
+			return freqComp;
+		}
+		else {
+			int nameComp = name.compareTo(other.name);
+			
+		}
+		}
+    	
+    	
+    }
+}

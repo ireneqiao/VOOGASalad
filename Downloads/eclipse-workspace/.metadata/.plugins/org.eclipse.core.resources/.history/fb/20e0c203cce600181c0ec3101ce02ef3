@@ -1,0 +1,16 @@
+import java.util.*;
+public class ValidAddresses {
+	
+	public class Address implements Comparator<String>{
+		private String ip;
+		public Address (String a) {
+			ip = a;
+		}
+
+		@Override
+		public int compare(String o1, String o2) {
+			
+		}
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class PowerList {
+    public ListNode create(int n) {
+    	int counter = 1;
+    	ListNode first = new ListNode(1, null);
+    	while (counter < n) {
+    		counter = counter * 2;
+    	}
+}
