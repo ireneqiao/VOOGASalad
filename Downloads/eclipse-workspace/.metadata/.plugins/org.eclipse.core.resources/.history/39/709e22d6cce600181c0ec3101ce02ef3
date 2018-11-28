@@ -1,9 +1,0 @@
-import java.util.*;
-public class ValidAddresses {
-    public String[] valid(String possible){
-    }
-	private void helper(String pos, int index, String[] parts) {
-		
-	}
-
-}
