@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/cellsociety_team15" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example_bins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/example_roulette" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/game_isq" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab_bounce" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab_hangman" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/portfolio_isq" vcs="Git" />
+  </component>
+</project>
